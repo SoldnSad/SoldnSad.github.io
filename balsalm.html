@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>VK Audio Redirect</title>
+    <script>
+      // Пытаемся открыть песню через VK-протокол
+      window.location.href = "vk://vk.com/audio63975919_456239075";
+
+      // Если через 1 секунду не получилось — открываем веб-ссылку
+      setTimeout(function () {
+        window.location.href = "https://vk.com/audio63975919_456239075";
+      }, 1000);
+    </script>
+  </head>
+  <body>
+    <p>Открываем песню в VK...</p>
+  </body>
+</html>
